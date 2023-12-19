@@ -1,0 +1,393 @@
+%-------------------------
+% Resume in Latex
+% Author : Subhajit Ghosh
+% Based off of: https://github.com/subhajit17/
+% License : Lpu
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{fontawesome5}
+\usepackage{multicol}
+\usepackage{graphicx}
+\setlength{\multicolsep}{-3.0pt}
+\setlength{\columnsep}{-1pt}
+\input{glyphtounicode}
+
+\RequirePackage{tikz}
+\RequirePackage{xcolor}
+\RequirePackage{fontawesome}
+\usepackage{tikz}
+\usetikzlibrary{svg.path}
+
+
+\definecolor{cvblue}{HTML}{0E5484}
+\definecolor{black}{HTML}{130810}
+\definecolor{darkcolor}{HTML}{0F4539}
+\definecolor{cvgreen}{HTML}{3BD80D}
+\definecolor{taggreen}{HTML}{00E278}
+\definecolor{SlateGrey}{HTML}{2E2E2E}
+\definecolor{LightGrey}{HTML}{666666}
+\colorlet{name}{black}
+\colorlet{tagline}{darkcolor}
+\colorlet{heading}{darkcolor}
+\colorlet{headingrule}{cvblue}
+\colorlet{accent}{darkcolor}
+\colorlet{emphasis}{SlateGrey}
+\colorlet{body}{LightGrey}
+
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+% \pagestyle{fancy}
+% \fancyhf{}  % clear all header and footer fields
+% \fancyfoot{}
+% \renewcommand{\headrulewidth}{0pt}
+% \renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.6in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1.19in}
+\addtolength{\topmargin}{-.7in}
+\addtolength{\textheight}{1.4in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large\bfseries
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\classesList}[4]{
+    \item\small{
+        {#1 #2 #3 #4 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{\large#1} & \textbf{\small #2} \\
+      \textit{\large#3} & \textit{\small #4} \\
+     
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{1.001\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & \textbf{\small #2}\\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemi{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.0in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+
+\newcommand\sbullet[1][.5]{\mathbin{\vcenter{\hbox{\scalebox{#1}{$\bullet$}}}}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+
+
+\begin{center}
+    {\Huge \scshape SUBHAJIT GHOSH} \\ \vspace{1pt}\Large
+    Business Analyst Enthusiast\\ \vspace{1pt}
+    Bankura, West Bengal, 722177, INDIA \\ \vspace{1pt}
+    \small \href{tel:#}{ \raisebox{-0.1\height}\faPhone\ \underline{+91-8918716744} ~} \href{mailto:gsubhajit.subha@gmail.com}{\raisebox{-0.2\height}\faEnvelope\  \underline{gsubhajit.subha@gmail.com}} ~
+    \href{www.linkedin.com/in/subhajit7/}{\raisebox{-0.2\height}\faLinkedinSquare\ \underline{www.linkedin.com/in/subhajit7/}}  ~
+    \href{https://github.com/subhajit17/}{\raisebox{-0.2\height}\faGithub\ \underline{https://github.com/subhajit17/}} ~
+
+\end{center}
+ \vspace{0.1mm}
+%-----------SUMMARY-----------
+\section*{SUMMARY}
+Detail-oriented Business Analyst Enthusiast with a solid foundation in analytics, technical skills, and leadership. Specializing in statistical analysis, data visualization, and data-driven decision-making. Proven track record in creating efficient data pipelines and dashboards. Effective communicator with the ability to convey complex findings to diverse stakeholders. Committed to continuous learning and eager to contribute expertise to drive business growth and make a positive impact.
+
+%-----------EDUCATION-----------
+\section{EDUCATION}
+\resumeSubHeadingListStart
+  \resumeSubheading
+    {Lovely Professional University, Punjab}{2020 – 2024}
+    {Integrated BBA - MBA: Business Analyst \& Marketing}{CGPA: 8.05}
+   
+  \resumeSubheading
+    {Chousal High School, Bankura (WBCHSE)}{2018 - 2019}
+    {12th}{Percentage: 70\%}
+   
+  \resumeSubheading
+    {Chousal High School, Bankura (WBBSE)}{2016 - 2017}
+    {10th}{Percentage: 80\%}
+\resumeSubHeadingListEnd
+
+%------TECHNICAL SKILLS-------
+\section{TECHNICAL SKILLS}
+    %\resumeSubHeadingListStart
+        \begin{multicols}{4}
+            \begin{itemize}[itemsep=-2pt, parsep=5pt]
+                \item Python
+                \item R programming
+                \item SQL
+                \item Excel
+                \item Snowflake
+                \item AWS
+                \item Power BI
+                \item Tableau
+                \item Google Analytics
+                \item Statistics
+                \item Machine Learning
+                \item Marketing
+            \end{itemize}
+        \end{multicols}
+        \vspace*{2.0\multicolsep}
+        \vspace{0.1mm}
+    %\resumeSubHeadingListEnd
+    
+%------Soft SKILLS-------
+\section{Soft SKILLS}
+    %\resumeSubHeadingListStart
+        \begin{multicols}{4}
+            \begin{itemize}[itemsep=-2pt, parsep=5pt]
+                \item Leadership
+                \item Problem solving
+                \item Critical thinking
+                \item Communication
+                \item Presentation
+                \item Negotiation
+                \item Attention to detail
+                \item Teamwork
+                \item Research
+                \item Creativity
+                \item Innovative
+                \item Active listening
+            \end{itemize}
+            \vspace{0.1mm}
+        \end{multicols}
+        \vspace*{2.0\multicolsep}
+        \vspace{0.1mm}
+    %\resumeSubHeadingListEnd
+
+%-------------Experience-----------
+\section{EXPERIENCE}
+    \vspace{-5pt}
+    \resumeSubHeadingListStart
+
+      \resumeProjectHeading
+          {\href{https://urgence.in/}{\textbf{\large{{\textbf{Urgence}}}} \href{Project Link}{\raisebox{-0.1\height}\faExternalLink }} $|$ \large{{Marketing Analyst and Strategist }}}{Jun 2022 – Jul 2023}\\
+          \resumeItemListStart
+             \resumeItem{\normalsize{Developed and executed strategic initiatives for B2B and B2C healthcare clients, \textbf{enhancing operational efficiency by 35\% and revenue by 15\%.}}}
+            \resumeItem{\normalsize{Analyzed intricate healthcare data for meaningful insights, fostering data-driven decisions.}}
+            \resumeItem{\normalsize{Collaborated on cross-functional teams for market trends, competitive intelligence, and innovation.}}
+            \resumeItem{\normalsize{Played a vital role in urgency management, ensuring swift responses to critical healthcare situations.}}
+          \resumeItemListEnd
+          \vspace{-5pt}
+          \vspace{0.1mm}
+         
+         
+    \resumeSubHeadingListEnd
+\vspace{-12pt}
+
+%-------------INTERNSHIP-----------
+\section{INTERNSHIP}
+\vspace{-5pt}
+\resumeSubHeadingListStart
+
+\resumeProjectHeading
+{\href{https://www.pantaloons.com/}{\textbf{\large{{\textbf{ABFR Ltd – Pantaloons}}}} \href{Project Link}{\raisebox{-0.1\height}\faExternalLink }} $|$ \large{{Sale and Operation Intern}}}{May 2022 – Jun 2022}\\
+\resumeItemListStart
+    \resumeItem{\normalsize{Conducted comprehensive market research, including analyzing customer feedback, and implemented a customer satisfaction survey.}}
+    \resumeItem{\normalsize{Achieved a 20\% sales increase and enhanced customer satisfaction.}}
+    \resumeItem{\normalsize{Worked as a cashier at the cash counter, actively participating in inventory management, and collaborated closely with the sales and marketing team.}}
+\resumeItemListEnd
+\vspace{-12pt}
+\resumeProjectHeading
+{\href{https://in.linkedin.com/company/shining-tomorrow-foundation}{\textbf{\large{{\textbf{Shining Tomorrow Foundation }}}} \href{Project Link}{\raisebox{-0.1\height}\faExternalLink }} $|$ \large{{Business Analyst Intern}}}{Apr 2021 – Jul 2021}\\
+\resumeItemListStart
+    \resumeItem{\normalsize{Analyzed social media accounts, used advanced analytics to identify growth opportunities.}}
+    \resumeItem{\normalsize{Developed innovative strategies that boosted followers by 10,000 in three months, resulting in a 25\% increase in brand awareness.}}
+    \resumeItem{\normalsize{Collaborated with a cross-functional team to implement effective marketing strategies, leading to a 30\% rise in donor contributions.}}
+\resumeItemListEnd
+
+\resumeSubHeadingListEnd
+\vspace{-12pt}
+
+
+%-----------PROJECTS-----------
+\section{PROJECTS}
+    \vspace{-5pt}
+    \resumeSubHeadingListStart
+          \vspace{5pt}
+          \resumeProjectHeading
+          {\href{https://github.com/subhajit17/Retail_Analysis}{\textbf{\large{{Retail Data Analysis }}} \href{https://github.com/subhajit17/Retail_Analysis}{\raisebox{-0.1\height}\faExternalLink }} $|$ \large{{AWS, Sheets, SQL, Snowflake, Python, Power BI }}}{Oct 2023}\\
+          \resumeItemListStart
+            \resumeItem{\normalsize{Conducted data cleaning, comprehensive EDA to extract valuable insights, created KPIs, and implemented an intuitive dashboard..}}
+            \resumeItem{\normalsize{Reduced reporting time by 50\% and improved decision-making with significantly improved decision-making accuracy, resulting in more informed business strategies.}}            
+          \resumeItemListEnd
+          \vspace{-13pt}
+          
+         
+         
+         
+      \resumeProjectHeading
+          {\href{https://github.com/subhajit17/Czechoslovakia-Bank-Financial-Data-Analysis}{\textbf{\large{{Financial Data Analysis of Czechoslovakia Dataset }}} \href{https://github.com/subhajit17/Czechoslovakia-Bank-Financial-Data-Analysis}{\raisebox{-0.1\height}\faExternalLink }} $|$ \large{{ Excel, Python, SQL, PowerBI }}}{Jul 2023}\\
+          \resumeItemListStart
+             \resumeItem{\normalsize{Executed end-to-end data transformation and integration, from AWS to Power BI dashboard development.}}
+             \resumeItem{\normalsize{Resulted in a 15\% reduction in operational costs and a 20\% increase in profitability}}          
+          \resumeItemListEnd
+          \vspace{-13pt}
+
+                   
+         
+         
+      \resumeProjectHeading
+          {\href{https://github.com/subhajit17/HR_Analytics_PW_Skills_Project}{\textbf{\large{{HR Attrition Dataset Analysis}}} \href{https://github.com/subhajit17/HR_Analytics_PW_Skills_Project}{\raisebox{-0.1\height}\faExternalLink }} $|$ \large{{Docs, Sheets, PowerBI }}}{May 2023}\\
+          \resumeItemListStart
+             \resumeItem{\normalsize{Provided insights for HR managers to improve workplace dynamics and reduce attrition rates.}}
+             \resumeItem{\normalsize{Highlighted the correlation between employee attrition and factors such as age, salary, job satisfaction, and work-life balance.}}  
+             \resumeItem{\normalsize{Enabled decision-makers to make informed choices that positively impacted retention.}}
+          \resumeItemListEnd
+          \vspace{-13pt}
+
+
+        \resumeProjectHeading
+          {\href{https://www.novypro.com/project/ipl-dashboard-d}{\textbf{\large{{IPL Dashboard Project}}} \href{https://www.novypro.com/project/ipl-dashboard-d}{\raisebox{-0.1\height}\faExternalLink }} $|$ \large{{Docs, Sheets, PowerBI }}}{Jan 2023}\\
+          \resumeItemListStart
+             \resumeItem{\normalsize{Provided insights for HR managers to improve workplace dynamics and reduce attrition rates.}}
+             \resumeItem{\normalsize{Highlighted the correlation between employee attrition and factors such as age, salary, job satisfaction, and work-life balance.}}  
+             \resumeItem{\normalsize{Enabled decision-makers to make informed choices that positively impacted retention.}}
+          \resumeItemListEnd
+          \vspace{-13pt}
+
+
+        \resumeProjectHeading
+          {\href{https://www.seekho.ai/certificate/public/goal/SEEKHO13151508634709/41}{\textbf{\large{{Marketing \& Execution for Myglamm in Seekho }}} \href{https://www.seekho.ai/certificate/public/goal/SEEKHO13151508634709/41}{\raisebox{-0.1\height}\faExternalLink }} $|$ \large{{Excel, MS Power Point, MS Office }}}{Dec 2022}\\
+          \resumeItemListStart
+             \resumeItem{\normalsize{ Implemented data-driven marketing techniques, leveraging customer insights to refine targeting and drive sales growth.}}
+             \resumeItem{\normalsize{Spearheaded marketing and execution, elevating brand presence and boosting sales.}}  
+             \resumeItem{\normalsize{Achieved project objectives, extending market reach and implementing impactful marketing strategies.}}
+          \resumeItemListEnd
+          \vspace{-13pt}
+
+
+        \resumeProjectHeading
+            {\href{https://rb.gy/a5dxyr}{\textbf{\large{{TCS Financial Analysis in One Page}}} \href{https://rb.gy/a5dxyr}{\raisebox{-0.1\height}\faExternalLink }} $|$ \large{{Excel}}}{Oct 2022}\\
+            \resumeItemListStart
+                \resumeItem{\normalsize{Analyzed sales growth, gross profit margins, and EBITDA margins from March 2019 to March 2023.}}
+                \resumeItem{\normalsize{Explored shareholder structure, with Tata Sons holding 72.27\%, and examined remuneration for key management.}}  
+                \resumeItem{\normalsize{Achieved project objectives, extending market reach, and implementing impactful marketing strategies.}}
+                
+            \resumeItemListEnd
+            \vspace{-1pt}
+   
+         
+    \resumeSubHeadingListEnd
+\vspace{-12pt}
+
+%
+
+
+%-----------EXPERIENCE-----------
+% \section{INTERNSHIP}
+%   \resumeSubHeadingListStart
+
+%     \resumeSubheading
+%       {Company Name \href{certificate Link}{\raisebox{-0.1\height}\faExternalLink }}{MM YYYY -- MM YYYY}
+%       {\underline{Role Name}}{city, country}
+%       \resumeItemListStart
+%         \resumeItem{\normalsize{About the role \textbf{and responsibilities carried out.}}}
+ 
+%       \resumeItemListEnd  
+%   \resumeSubHeadingListEnd
+% \vspace{-12pt}
+
+
+
+
+
+  %-----------CERTIFICATIONS---------------
+\section{CERTIFICATIONS}
+
+$\sbullet[.75] \hspace{0.1cm}$ {\href{https://learn.ineuron.ai/certificate/f188c380-a7a7-446c-b3c3-a493136aba54}{Full Stack Data Analyst - Ineuron}} \hspace{2.59cm}\\
+$\sbullet[.75] \hspace{0.1cm}$ {\href{https://media.licdn.com/dms/document/media/D4D1FAQHCynBzMYduog/feedshare-document-pdf-analyzed/0/1689338304897?e=1703721600&v=beta&t=6fwlaLM2Tf1MyRPI3hA7_QRPljfbTFRFRnI8hqQ2mUY}{Advance Business Analytic Skills - LinkedIn Learning}} \hspace{1.6cm}\\
+$\sbullet[.75] \hspace{0.2cm}${\href{https://www.linkedin.com/learning/certificates/88143c3ddf41c4379eb7336e011cd2cc2d8d14be18159da103ec37937f6f131d?u=104956452} {Power BI Data Analyst (PL-300) Associate Cert Prep: Manage Workspaces - LinkedIn Learning}}\hspace{1.6cm}\\
+$\sbullet[.75] \hspace{0.2cm}${\href{https://drive.google.com/file/d/1JivTLpe1cKaxUVvQgSfIy0-FLLFo0Y5U/view?usp=sharing}{Advance Excel -  Grant Thornton }} \hspace{1cm}\\
+$\sbullet[.75] \hspace{0.2cm}${\href{https://www.coursera.org/account/accomplishments/verify/3U4X5RZSMLKB}{Integrated Marketing Communications: Advertising, Public Relations, Digital Marketing and more - Coursera }} \hspace{1cm}\\
+$\sbullet[.75] \hspace{0.2cm}${\href{https://drive.google.com/file/d/1IafnRgHoB19Zr1OhZJ_d5OQi49FG232f/view?usp=sharing}{Marketing Foundations: Analytics - IIBA }} \hspace{1cm}\\
+$\sbullet[.75] \hspace{0.2cm}${\href{https://drive.google.com/file/d/1mIbnbSiuKJOPhu4fULrKfla1xZ07CFyE/view?usp=sharing}{Using Tableau to Discover Powerful Business Insights - LinkedIn Learning }} \hspace{1cm}\\
+$\sbullet[.75] \hspace{0.2cm}${\href{https://drive.google.com/file/d/1saf6QF3vXxp0-EXdkZe6bXAm0ZqXgAxZ/view?usp=sharing}{Data Science with Python - Simple Learning }} \hspace{1cm}\\
+$\sbullet[.75] \hspace{0.2cm}${\href{https://www.credly.com/badges/ae2c848a-815a-4f51-b1df-6be4f439cefc/print}{IBM SPSS Modeler V18.2.x Essentials - IBM }} \hspace{1cm}\\
+
+
+\section{ACHIEVEMENTS}
+\begin{itemize}
+    \item Secured 1st place in an IBM-hosted competition at LPU.
+    \item Recognized as Best Performer during internship at Shining Tomorrow Foundation.
+    \item Awarded 1st prize in Youth Parliament at Gangajalghati High School.
+\end{itemize}
+
+
+\section{Language}
+\begin{itemize}
+    \item English \hspace{10pt} \item Hindi \hspace{10pt} \item Bengali
+\end{itemize}
+\vspace{-11pt}
+
+ 
+ \end{document}
